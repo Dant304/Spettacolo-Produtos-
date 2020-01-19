@@ -1,0 +1,18 @@
+<table class="table container">
+    <tbody>
+        <tr>
+            <th>ID</td>
+            <th>NOME</td>
+            <th>DESCRIÇÃO</th>
+            <th>PREÇO</th>
+        <tr>    
+        <tr>
+            <% @produto.each do |p| %>
+            <td><%= p.id =%></td>
+            <td><%= p.nome =%></td>
+            <td><%= p.descricao =%></td>
+            <td><%= p.preco =%></td>
+        </tr>
+            <% end %>
+    </tbody>
+</tbody>

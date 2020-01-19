@@ -1,0 +1,13 @@
+<div class="container form-group">   
+   <%= form_for Produto.new do |f| %>
+    <div class="d-flex form-row formulario">
+        <div class="text-center col-md-12">
+            <h2>Cadastrar Produto</h2>
+        </div>
+        Nome <input type="text" name="produto[nome]" class="form-control "><br/>
+        Descrição <textarea name="produto[descricao]" class="form-control"></textarea><br/>
+        Preço <input type="number" name="produto[preco]" step="0.01" class="form-control form-control-lg"><br/>
+        <button type="submit" class="btn btn-primary text-center col-md-12">Criar</button> 
+    </div>
+    <% end %>
+</div>
